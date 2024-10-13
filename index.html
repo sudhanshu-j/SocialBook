@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+
+    <title>SocialBook - A Social Media Clone Website</title>
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Favicon in Png format -->
+
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+
+    <!-- CSS Stylesheet -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <!-- Container to hold all navigation elements -->
+      <div class="container">
+        <!-- Logo of SocialBook -->
+        <a href="#" class="logo">
+          <!-- Image of the logo -->
+          <img src="/images/logo.png" alt="SocialBook" />
+        </a>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+          <!-- Search icon -->
+          <i class="fas fa-search"></i>
+          <!-- Input field for search -->
+          <input type="search" placeholder="Search..." />
+        </div>
+
+        <!-- Create post button and profile picture -->
+        <div class="create">
+          <!-- Create post button -->
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <!-- Profile picture container -->
+          <div class="profile-pic">
+            <!-- Profile picture image -->
+            <img src="/images/main-profile.jpg" alt="" />
+            <!-- Active indicator (e.g. for online status) -->
+            <div class="active"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main>
+      <div class="container">
+        <!-- Left Section -->
+        <!-- Left section of the page, containing the profile information and sidebar -->
+        <div class="left-section">
+          <!-- Profile information, including profile picture and handle -->
+          <a href="#" class="profile">
+            <div class="profile-pic">
+              <!-- Profile picture image -->
+              <img src="/images/main-profile.jpg" alt="" />
+            </div>
+
+            <div class="handle">
+              <!-- Profile name -->
+              <h4>Jane Smith</h4>
+              <!-- Profile handle -->
+              <p class="muted-text">@jsmith</p>
+            </div>
+          </a>
+
+          <!-- Sidebar, containing navigation links -->
+          <div class="sidebar">
+            <!-- Home link, currently active -->
+            <a href="#" class="menu-item active">
+              <!-- Home icon -->
+              <span>
+                <i class="fas fa-home"></i>
+              </span>
+              <!-- Home link text -->
+              <h3>Home</h3>
+            </a>
+
+            <!-- Explore link -->
+            <a href="#" class="menu-item">
+              <!-- Explore icon -->
+              <span>
+                <i class="fa-regular fa-compass"></i>
+              </span>
+              <!-- Explore link text -->
+              <h3>Explore</h3>
+            </a>
+
+            <!-- Notification link, with popup menu -->
+            <a href="#" class="menu-item" id="notification">
+              <!-- Notification icon, with notification count -->
+              <span>
+                <i class="fas fa-bell">
+                  <small class="notification-count"> 9+ </small>
+                </i>
+              </span>
+              <!-- Notification link text -->
+              <h3>Notifications</h3>
+
+              <!-- Notification popup menu, containing notification items -->
+              <div class="notification-popup">
+                <!-- Notification item 1 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Michael Johnson </b> accepted your friend request
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 10 minutes ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 2 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-3.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Jessica Brown </b> liked your post
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 2 hours ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 3 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-4.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Emily Johnson </b> shared a new photo
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 3 days ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 4 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-5.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Amanda Johnson </b> shared a new video
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 4 weeks ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 5 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-6.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Isabella Cooper </b> Sent you a friend request
+                    <!-- Notification timestamp -->
+                    <small class="muted-text">3 months ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 6 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-7.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Olivia Morgan </b> Sent you a friend request
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 3 months ago </small>
+                  </div>
+                </div>
+
+                <!-- Notification item 7 -->
+                <div>
+                  <div class="profile-pic">
+                    <!-- Profile picture image -->
+                    <img src="/images/profile-8.jpg" alt="" />
+                  </div>
+                  <div class="notification-content">
+                    <!-- Notification text -->
+                    <b> Alexander Carter </b> shared a new link
+                    <!-- Notification timestamp -->
+                    <small class="muted-text"> 7 months ago </small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Messages link, with notification count -->
+            <a href="#" class="menu-item" id="msg-notification">
+              <!-- Messages icon, with notification count -->
+              <span>
+                <i class="fas fa-comments">
+                  <small class="notification-count"> 12 </small>
+                </i>
+              </span>
+              <!-- Messages link text -->
+              <h3>Messages</h3>
+            </a>
+
+            <!-- Bookmarks link -->
+            <a href="#" class="menu-item item-5">
+              <!-- Bookmarks icon -->
+              <span>
+                <i class="fas fa-bookmark"></i>
+              </span>
+              <!-- Bookmarks link text -->
+              <h3>Bookmarks</h3>
+            </a>
+
+            <!-- Analytics link -->
+            <a href="#" class="menu-item item-6">
+              <!-- Analytics icon -->
+              <span>
+                <i class="fas fa-chart-line"></i>
+              </span>
+              <!-- Analytics link text -->
+              <h3>Analytics</h3>
+            </a>
+
+            <!-- Theme link -->
+            <a href="#" class="menu-item" id="theme">
+              <!-- Theme icon -->
+              <span>
+                <i class="fas fa-paint-brush"></i>
+              </span>
+              <!-- Theme link text -->
+              <h3>Theme</h3>
+            </a>
+
+            <!-- Settings link -->
+            <a href="#" class="menu-item">
+              <!-- Settings icon -->
+              <span>
+                <i class="fas fa-cog"></i>
+              </span>
+              <!-- Settings link text -->
+              <h3>Settings</h3>
+            </a>
+          </div>
+
+          <!-- End Button -->
+          <!-- Create post button -->
+          <label class="btn btn-primary" for="create-post">
+            <!-- Create post icon -->
+            <i class="fas fa-plus"></i>
+            <!-- Create post text -->
+            Create Post
+          </label>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="middle-section">
+          <!-- Stories section -->
+          <div class="stories">
+            <!-- Story 1 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/main-profile.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Your Story</p>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/profile-9.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Ethan Parker</p>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/profile-10.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Amelia Foster</p>
+            </div>
+
+            <!-- Story 4 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/profile-11.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Mark Johnson</p>
+            </div>
+
+            <!-- Story 5 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/profile-12.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Emily Davis</p>
+            </div>
+
+            <!-- Story 6 -->
+            <div class="story">
+              <!-- Profile picture of the story owner -->
+              <div class="profile-pic">
+                <img src="/images/profile-13.jpg" alt="" />
+              </div>
+              <!-- Name of the story owner -->
+              <p class="name">Sarah Wilson</p>
+            </div>
+          </div>
+
+          <!-- Post Form -->
+          <!-- Form to create a new post -->
+          <form class="create-post">
+            <!-- Profile picture of the user creating the post -->
+            <div class="profile-pic">
+              <img src="/images/main-profile.jpg" alt="" />
+            </div>
+
+            <!-- Text input field for the post content -->
+            <input
+              type="text"
+              placeholder="What's on your mind"
+              id="create-post"
+            />
+            <!-- Submit button to post the content -->
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!-- News Feed -->
+          <!-- Container for the news feed content -->
+          <div class="news-feeds">
+            <!-- Feed Content -->
+            <!-- Individual feed item -->
+            <!-- Feed item 1 -->
+            <div class="feed">
+              <!-- Feed header -->
+              <div class="head">
+                <!-- User information -->
+                <div class="user">
+                  <!-- Profile picture of the user who posted the feed -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-19.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile information, including name and location -->
+                  <div class="info">
+                    <h3>Mia Thompson</h3>
+                    <small> Dubai, 15 Minutes ago </small>
+                  </div>
+                </div>
+                <!-- Edit button for the feed -->
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed image -->
+              <div class="post-img">
+                <img src="/images/feed-1.jpg" alt="" />
+              </div>
+
+              <!-- Action buttons for the feed -->
+              <div class="action-btn">
+                <!-- Interaction buttons (like, comment, share) -->
+                <div class="interaction-btn">
+                  <!-- Like button -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment button -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share button -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <!-- Bookmark button -->
+                <div class="bookmark">
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Liked by section -->
+              <div class="liked-by">
+                <!-- Profile pictures of users who liked the post -->
+                <span>
+                  <img src="/images/profile-10.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-8.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-17.jpg" alt="" />
+                </span>
+                <!-- Text indicating the number of users who liked the post -->
+                <p>
+                  Liked by <b> Amanda Johnson </b> and
+                  <b> 2,500 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption section -->
+              <div class="caption">
+                <!-- Text of the post caption -->
+                <p>
+                  <b>Mia Thompson</b>
+                  May your life always shine like this light.
+                  <!-- Hashtags for the post -->
+                  <span class="hash-tag">
+                    #LoveYourself #ThankYou #BestGifts
+                  </span>
+                </p>
+              </div>
+
+              <!-- Comments section -->
+              <div class="comment muted-text">View All 250 Comments</div>
+            </div>
+
+            <!-- Feed item 2 -->
+            <div class="feed">
+              <!-- Feed header -->
+              <div class="head">
+                <!-- User information -->
+                <div class="user">
+                  <!-- Profile picture of the user who posted the feed -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-5.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile information, including name and location -->
+                  <div class="info">
+                    <h3>Amanda Johnson</h3>
+                    <small> New York, 20 Minutes ago </small>
+                  </div>
+                </div>
+                <!-- Edit button for the feed -->
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed image -->
+              <div class="post-img">
+                <img src="/images/feed-2.jpg" alt="" />
+              </div>
+
+              <!-- Action buttons for the feed -->
+              <div class="action-btn">
+                <!-- Interaction buttons (like, comment, share) -->
+                <div class="interaction-btn">
+                  <!-- Like button -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment button -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share button -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+                <!-- Bookmark button -->
+                <div class="bookmark">
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Liked by section -->
+              <div class="liked-by">
+                <!-- Profile pictures of users who liked the post -->
+                <span>
+                  <img src="/images/profile-1.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-6.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-7.jpg" alt="" />
+                </span>
+                <!-- Text indicating the number of users who liked the post -->
+                <p>
+                  Liked by <b> Michael Johnson </b> and
+                  <b> 1,500 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption section -->
+              <div class="caption">
+                <!-- Text of the post caption -->
+                <p>
+                  <b>Amanda Johnson</b>
+                  Happy birthday to my self
+                  <!-- Hashtags for the post -->
+                  <span class="hash-tag"> #HappyBirthday </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments section -->
+              <div class="comment muted-text">View All 150 Comments</div>
+            </div>
+
+            <!-- Feed item 3 -->
+            <div class="feed">
+              <!-- Feed header -->
+              <div class="head">
+                <!-- User information -->
+                <div class="user">
+                  <!-- Profile picture of the user who posted the feed -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-11.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile information, including name and location -->
+                  <div class="info">
+                    <h3>Mark Johnson</h3>
+                    <small> London, 25 Minutes ago </small>
+                  </div>
+                </div>
+                <!-- Edit button for the feed -->
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed image -->
+              <div class="post-img">
+                <img src="/images/feed-3.jpg" alt="" />
+              </div>
+
+              <!-- Action buttons for the feed -->
+              <div class="action-btn">
+                <!-- Interaction buttons (like, comment, share) -->
+                <div class="interaction-btn">
+                  <!-- Like button -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment button -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share button -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+                <!-- Bookmark button -->
+                <div class="bookmark">
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Liked by section -->
+              <div class="liked-by">
+                <!-- Profile pictures of users who liked the post -->
+                <span>
+                  <img src="/images/profile-3.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-4.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-11.jpg" alt="" />
+                </span>
+                <p>
+                  <!-- Text indicating the number of users who liked the post -->
+                  Liked by <b> Emily Johnson </b> and
+                  <b> 2,000 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption section -->
+              <div class="caption">
+                <!-- Text of the post caption -->
+                <p>
+                  <b>Mark Johnson</b>
+                  Have a great holiday weekend!
+                  <!-- Hashtags for the post -->
+                  <span class="hash-tag"> #HappyHolidays </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments section -->
+              <div class="comment muted-text">View All 200 Comments</div>
+            </div>
+
+            <!-- Feed item 4 -->
+            <div class="feed">
+              <!-- Feed header -->
+              <div class="head">
+                <!-- User information -->
+                <div class="user">
+                  <!-- Profile picture of the user who posted the feed -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-4.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile information, including name and location -->
+                  <div class="info">
+                    <h3>Emily Johnson</h3>
+                    <small> Paris, 30 Minutes ago </small>
+                  </div>
+                </div>
+                <!-- Edit button for the feed -->
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-4.jpg" alt="" />
+              </div>
+
+              <!-- Action buttons for the feed -->
+              <div class="action-btn">
+                <!-- Interaction buttons (like, comment, share) -->
+                <div class="interaction-btn">
+                  <!-- Like button -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment button -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share button -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+                <!-- Bookmark button -->
+                <div class="bookmark">
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Liked by section -->
+              <div class="liked-by">
+                <!-- Profile pictures of users who liked the post -->
+                <span>
+                  <img src="/images/main-profile.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-6.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-7.jpg" alt="" />
+                </span>
+                <!-- Text indicating the number of users who liked the post -->
+                <p>
+                  Liked by <b> You, Michael Johnson </b> and
+                  <b> 1,500 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption section -->
+              <div class="caption">
+                <!-- Text of the post caption -->
+                <p>
+                  <b>Emily Johnson</b>
+                  Had great fun with my best girls.
+                  <!-- Hashtags for the post -->
+                  <span class="hash-tag"> #fun </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments section -->
+              <div class="comment muted-text">View All 250 Comments</div>
+            </div>
+
+            <!-- Feed item 5 -->
+            <div class="feed">
+              <!-- Feed header -->
+              <div class="head">
+                <!-- User information -->
+                <div class="user">
+                  <!-- Profile picture of the user who posted the feed -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-18.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile information, including name and location -->
+                  <div class="info">
+                    <h3>Sophia Scott</h3>
+                    <small> New York, 45 Minutes ago </small>
+                  </div>
+                </div>
+                <!-- Edit button for the feed -->
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-5.jpg" alt="" />
+              </div>
+
+              <!-- Action buttons for the feed -->
+              <div class="action-btn">
+                <!-- Interaction buttons (like, comment, share) -->
+                <div class="interaction-btn">
+                  <!-- Like button -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment button -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share button -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+                <!-- Bookmark button -->
+                <div class="bookmark">
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Liked by section -->
+              <div class="liked-by">
+                <!-- Profile pictures of users who liked the post -->
+                <span>
+                  <img src="/images/profile-7.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-9.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-10.jpg" alt="" />
+                </span>
+                <p>
+                  <!-- Text indicating the number of users who liked the post -->
+                  Liked by <b> Michael Johnson </b> and
+                  <b> 2,500 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption section -->
+              <div class="caption">
+                <!-- Text of the post caption -->
+                <p>
+                  <b>Sophia Scott</b>
+                  Friends over for dinner.
+                  <!-- Hashtags for the post -->
+                  <span class="hash-tag"> #Food </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments section -->
+              <div class="comment muted-text">View All 300 Comments</div>
+            </div>
+
+            <!-- Feed item 6 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <!-- Profile Picture -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-2.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile Information -->
+                  <div class="info">
+                    <h3>Michael Johnson</h3>
+                    <small> London, 1 hour ago </small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-6.jpg" alt="" />
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="action-btn">
+                <div class="interaction-btn">
+                  <!-- Like -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <div class="bookmark">
+                  <!-- Bookmark -->
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <!-- Liked By -->
+                <span>
+                  <img src="/images/profile-10.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-7.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-8.jpg" alt="" />
+                </span>
+                <p>
+                  Liked by <b> Sarah Wilson </b> and
+                  <b> 3,000 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption -->
+              <div class="caption">
+                <p>
+                  <b>Michael Johnson</b>
+                  Playing with this new game
+                  <span class="hash-tag"> #Gaming </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments -->
+              <div class="comment muted-text">View All 400 Comments</div>
+            </div>
+
+            <!-- Feed item 7 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <!-- Profile Picture -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-3.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile Information -->
+                  <div class="info">
+                    <h3>Jessica Brown</h3>
+                    <small> Paris, 1 day ago </small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-7.jpg" alt="" />
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="action-btn">
+                <div class="interaction-btn">
+                  <!-- Like -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <div class="bookmark">
+                  <!-- Bookmark -->
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <!-- Liked By -->
+                <span>
+                  <img src="/images/profile-1.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-4.jpg" alt="" />
+                </span>
+                <p>
+                  Liked by <b> Emily Johnson </b> and
+                  <b> 2,000 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption -->
+              <div class="caption">
+                <p>
+                  <b>Jessica Brown</b>
+                  Shopping at the mall
+                  <span class="hash-tag"> #Shopping </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments -->
+              <div class="comment muted-text">View All 250 Comments</div>
+            </div>
+
+            <!-- Feed item 8 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <!-- Profile Picture -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-12.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile Information -->
+                  <div class="info">
+                    <h3>Emily Davis</h3>
+                    <small> Paris, 1 day ago </small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-8.jpg" alt="" />
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="action-btn">
+                <div class="interaction-btn">
+                  <!-- Like -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <div class="bookmark">
+                  <!-- Bookmark -->
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <!-- Liked By -->
+                <span>
+                  <img src="/images/profile-1.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-4.jpg" alt="" />
+                </span>
+                <p>
+                  Liked by <b> Emily Johnson </b> and
+                  <b> 2,050 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption -->
+              <div class="caption">
+                <p>
+                  <b>Emily Davis</b>
+                  Chess match between me and my daughter
+                  <span class="hash-tag"> #Chess </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments -->
+              <div class="comment muted-text">View All 80 Comments</div>
+            </div>
+
+            <!-- Feed item 9 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <!-- Profile Picture -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-13.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile Information -->
+                  <div class="info">
+                    <h3>Sarah Wilson</h3>
+                    <small> California, 2 day ago </small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-9.jpg" alt="" />
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="action-btn">
+                <div class="interaction-btn">
+                  <!-- Like -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <div class="bookmark">
+                  <!-- Bookmark -->
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <!-- Liked By -->
+                <span>
+                  <img src="/images/profile-1.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-4.jpg" alt="" />
+                </span>
+
+                <p>
+                  Liked by <b> Emily Johnson </b> and
+                  <b> 1,050 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption -->
+              <div class="caption">
+                <p>
+                  <b>Sarah Wilson</b>
+                  Trying to learn and play the 8-Ball pool game with my favorite
+                  person
+                  <span class="hash-tag"> #Pool </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments -->
+              <div class="comment muted-text">View All 180 Comments</div>
+            </div>
+
+            <!-- Feed item 10 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <!-- Profile Picture -->
+                  <div class="profile-pic">
+                    <img src="/images/profile-8.jpg" alt="" />
+                  </div>
+
+                  <!-- Profile Information -->
+                  <div class="info">
+                    <h3>Alexander Carter</h3>
+                    <small> Australia, 3 days ago </small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <!-- Feed Image -->
+              <div class="post-img">
+                <img src="/images/feed-10.jpg" alt="" />
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="action-btn">
+                <div class="interaction-btn">
+                  <!-- Like -->
+                  <span>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+
+                  <!-- Comment -->
+                  <span>
+                    <i class="fa-regular fa-comment"></i>
+                  </span>
+
+                  <!-- Share -->
+                  <span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </span>
+                </div>
+
+                <div class="bookmark">
+                  <!-- Bookmark -->
+                  <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <!-- Liked By -->
+                <span>
+                  <img src="/images/profile-1.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="/images/profile-4.jpg" alt="" />
+                </span>
+
+                <p>
+                  Liked by <b> Emily Johnson </b> and
+                  <b> 1,050 other users. </b>
+                </p>
+              </div>
+
+              <!-- Caption -->
+              <div class="caption">
+                <p>
+                  <b>Alexander Carter</b>
+                  My three little angels are having fun on the beach.
+                  <span class="hash-tag"> #Beach </span>
+                  <span class="hash-tag"> #LoveYourself </span>
+                </p>
+              </div>
+
+              <!-- Comments -->
+              <div class="comment muted-text">View All 180 Comments</div>
+            </div>
+
+            <!-- end tag -->
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <!-- Container for the right section of the page -->
+        <div class="right-section">
+          <!-- Messages section -->
+          <div class="messages">
+            <!-- Heading for the messages section -->
+            <div class="heading">
+              <h3>Messages</h3>
+              <!-- Edit button for the messages section -->
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+
+            <!-- Search bar for messages -->
+            <div class="search-bar">
+              <!-- Search icon -->
+              <i class="fa-solid fa-search"></i>
+              <!-- Input field for searching messages -->
+              <input
+                type="search"
+                placeholder="Search messages"
+                id="msg-search"
+              />
+            </div>
+
+            <!-- Message category section -->
+            <div class="category">
+              <!-- Primary category button -->
+              <h6 class="active">Primary</h6>
+              <!-- General category button -->
+              <h6>General</h6>
+              <!-- Requests category button with count -->
+              <h6 class="msg-request">Requests(10)</h6>
+            </div>
+
+            <!-- Messages list -->
+            <!-- Message list item 1 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-4.jpg" alt="" />
+                <!-- Active indicator for the message -->
+                <div class="active"></div>
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Emily Johnson</h5>
+                <!-- Message text -->
+                <p class="muted-text">I'm looking for a coffee shop.</p>
+              </div>
+            </div>
+
+            <!-- Message list item 2 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-2.jpg" alt="" />
+                <!-- Active indicator for the message -->
+                <div class="active"></div>
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Michael Johnson</h5>
+                <!-- Message text -->
+                <p class="bold-text">Hi, How are you?</p>
+              </div>
+            </div>
+
+            <!-- Message list item 3 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-5.jpg" alt="" />
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Amanda Johnson</h5>
+                <!-- Message text -->
+                <p class="muted-text">Let's meet at the mall.</p>
+              </div>
+            </div>
+
+            <!-- Message list item 4 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-8.jpg" alt="" />
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Alexander Carter</h5>
+                <!-- Message text -->
+                <p class="muted-text">Is there anything else.</p>
+              </div>
+            </div>
+
+            <!-- Message list item 5 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-9.jpg" alt="" />
+                <!-- Active indicator for the message -->
+                <div class="active"></div>
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Ethan Parker</h5>
+                <!-- Message text -->
+                <p class="bold-text">Hi</p>
+              </div>
+            </div>
+
+            <!-- Message list item 6 -->
+            <div class="msg-list">
+              <!-- Profile picture of the message sender -->
+              <div class="profile-pic">
+                <img src="/images/profile-10.jpg" alt="" />
+                <!-- Active indicator for the message -->
+                <div class="active"></div>
+              </div>
+
+              <!-- Message content -->
+              <div class="msg-content">
+                <!-- Name of the message sender -->
+                <h5>Amelia Foster</h5>
+                <!-- Message text -->
+                <p class="bold-text">Have you tried this new feature</p>
+              </div>
+            </div>
+            <!-- End of messages list -->
+          </div>
+
+          <!-- Friend Requests section -->
+          <div class="friend-requests">
+            <!-- Heading for the friend requests section -->
+            <h4>Requests</h4>
+
+            <!-- Request list item 1 -->
+            <div class="request">
+              <!-- Information about the request sender -->
+              <div class="info">
+                <!-- Profile picture of the request sender -->
+                <div class="profile-pic">
+                  <img src="/images/profile-6.jpg" alt="" />
+                </div>
+                <!-- Name and mutual friends of the request sender -->
+                <div>
+                  <h5>Isabella Cooper</h5>
+                  <p class="muted-text">10 Mutual Friends</p>
+                </div>
+              </div>
+
+              <!-- Actions for the request (accept or decline) -->
+              <div class="action">
+                <!-- Accept request button -->
+                <button class="btn btn-primary">Accept</button>
+
+                <!-- Decline request button -->
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- Request list item 2 -->
+            <div class="request">
+              <!-- Information about the request sender -->
+              <div class="info">
+                <!-- Profile picture of the request sender -->
+                <div class="profile-pic">
+                  <img src="/images/profile-7.jpg" alt="" />
+                </div>
+                <!-- Name and mutual friends of the request sender -->
+                <div>
+                  <h5>Olivia Morgan</h5>
+                  <p class="muted-text">15 Mutual Friends</p>
+                </div>
+              </div>
+
+              <!-- Actions for the request (accept or decline) -->
+              <div class="action">
+                <!-- Accept request button -->
+                <button class="btn btn-primary">Accept</button>
+
+                <!-- Decline request button -->
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- Request list item 3 -->
+            <div class="request">
+              <!-- Information about the request sender -->
+              <div class="info">
+                <!-- Profile picture of the request sender -->
+                <div class="profile-pic">
+                  <img src="/images/profile-16.jpg" alt="" />
+                </div>
+                <!-- Name and mutual friends of the request sender -->
+                <div>
+                  <h5>Lily Richardson</h5>
+                  <p class="muted-text">20 Mutual Friends</p>
+                </div>
+              </div>
+
+              <!-- Actions for the request (accept or decline) -->
+              <div class="action">
+                <!-- Accept request button -->
+                <button class="btn btn-primary">Accept</button>
+
+                <!-- Decline request button -->
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- Request list item 4 -->
+            <div class="request">
+              <!-- Information about the request sender -->
+              <div class="info">
+                <!-- Profile picture of the request sender -->
+                <div class="profile-pic">
+                  <img src="/images/profile-17.jpg" alt="" />
+                </div>
+                <!-- Name and mutual friends of the request sender -->
+                <div>
+                  <h5>Charlotte Evans</h5>
+                  <p class="muted-text">25 Mutual Friends</p>
+                </div>
+              </div>
+
+              <!-- Actions for the request (accept or decline) -->
+              <div class="action">
+                <!-- Accept request button -->
+                <button class="btn btn-primary">Accept</button>
+
+                <!-- Decline request button -->
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- End -->
+        </div>
+      </div>
+    </main>
+    <!-- Custom Themes section -->
+    <div class="custom-theme">
+      <!-- Card container for the custom theme options -->
+      <div class="card">
+        <!-- Heading for the custom theme section -->
+        <h2>Customize Your Theme</h2>
+        <!-- Description of the custom theme options -->
+        <p class="muted-text">
+          Manage your font size, color and background color
+        </p>
+
+        <!-- Font Sizes section -->
+        <div class="font-size">
+          <!-- Heading for the font sizes section -->
+          <h4>Font Size</h4>
+
+          <!-- Container for the font size options -->
+          <div>
+            <!-- Sample text to demonstrate font sizes -->
+            <h6>Aa</h6>
+            <!-- Container for the font size options -->
+            <div class="choose-size">
+              <!-- Font size option 1 -->
+              <span class="f-size-1"></span>
+              <!-- Font size option 2 (active by default) -->
+              <span class="f-size-2 active"></span>
+              <!-- Font size option 3 -->
+              <span class="f-size-3"></span>
+              <!-- Font size option 4 -->
+              <span class="f-size-4"></span>
+              <!-- Font size option 5 -->
+              <span class="f-size-5"></span>
+            </div>
+            <!-- Sample text to demonstrate font sizes -->
+            <h3>Aa</h3>
+          </div>
+        </div>
+
+        <!-- Colors section -->
+        <div class="color">
+          <!-- Heading for the colors section -->
+          <h4>Colors</h4>
+          <!-- Container for the color options -->
+          <div class="choose-color">
+            <!-- Color option 1 (active by default) -->
+            <span class="color-1 active"></span>
+            <!-- Color option 2 -->
+            <span class="color-2"></span>
+            <!-- Color option 3 -->
+            <span class="color-3"></span>
+            <!-- Color option 4 -->
+            <span class="color-4"></span>
+            <!-- Color option 5 -->
+            <span class="color-5"></span>
+          </div>
+        </div>
+
+        <!-- Background Color section -->
+        <div class="background">
+          <!-- Heading for the background color section -->
+          <h4>Background</h4>
+          <!-- Container for the background color options -->
+          <div class="choose-bg">
+            <!-- Background color option 1 (active by default) -->
+            <div class="bg-1 active">
+              <!-- Color swatch for the background color option -->
+              <span></span>
+              <!-- Label for the background color option -->
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <!-- Background color option 2 -->
+            <div class="bg-2">
+              <!-- Color swatch for the background color option -->
+              <span></span>
+              <!-- Label for the background color option -->
+              <h5>Dim</h5>
+            </div>
+            <!-- Background color option 3 -->
+            <div class="bg-3">
+              <!-- Color swatch for the background color option -->
+              <span></span>
+              <!-- Label for the background color option -->
+              <h5 for="bg-3">Dark</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="app.js"></script>
+  </body>
+</html>

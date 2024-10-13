@@ -38,16 +38,18 @@ SocialBook provides a clean and interactive user interface, offering essential s
 
 The sidebar menu acts as the primary navigation section with important links to different parts of the website.
 
-    - **Navigation Items**: Includes Home, Messages, Notifications, and Theme Settings.
+- **Navigation Items**: Includes Home, Messages, Notifications, and Theme Settings.
 
-    - **Notification Card**: Clicking on the notification item triggers a pop-up card    displaying recent notifications.
+- **Notification Card**: Clicking on the notification item triggers a pop-up card    displaying recent notifications.
 
-    - **Theme Settings**:
-        - Clicking the Theme item opens a theme card that provides customization options  for:
-            - **Font Size**: Change the font size from smaller to larger.
+  - **Theme Settings**:
 
-            - **Color Options**: Users can switch between different theme colors.
+    - Clicking the Theme item opens a theme card that provides customization options  for:
 
+      - **Font Size**: Change the font size from smaller to larger.
+
+        - **Color Options**: Users can switch between different theme colors.
+            
             - **Background Modes**: Choose between:
 
                 - Light Mode
@@ -60,29 +62,29 @@ The sidebar menu acts as the primary navigation section with important links to 
 
 This section displays the core content that users interact with.
 
-    - **Story Section**:
+- **Story Section**:
 
-          - Located at the top, it showcases stories from users in a scrollable format.
+   - Located at the top, it showcases stories from users in a scrollable format.
 
-    - **Post Input Box**:
+- **Post Input Box**:
 
-          - A text box that allows users to create new posts.
+   - A text box that allows users to create new posts.
 
-    - **Post Section**:
+- **Post Section**:
 
-          - Displays a feed of user posts in reverse chronological order.
+   - Displays a feed of user posts in reverse chronological order.
 
 - **Right Section (Extras)**
 
 This section contains messaging and friend request functionalities.
 
-    - **Messages Section**:
+- **Messages Section**:
 
-          - Clicking the Messages item in the sidebar applies a box-shadow effect around the message card to highlight it.
+   - Clicking the Messages item in the sidebar applies a box-shadow effect around the message card to highlight it.
 
-    - **Friend Requests**:
+- **Friend Requests**:
 
-          - Displays a list of pending friend requests that users can accept or decline.
+   - Displays a list of pending friend requests that users can accept or decline.
 
 
 

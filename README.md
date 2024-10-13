@@ -186,10 +186,3 @@ Contributions are welcome! To contribute:
   - **Create a Pull Request on GitHub**.
 
 Thank you for checking out SocialBook! Enjoy exploring the website and feel free to share your feedback or suggestions.
-
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `- I hope this README file provides a comprehensive overview of SocialBook's features and functionality. If you have any questions or need further clarification, please don't hesitate to ask!
-`
-
-```diff
-- I hope this README file provides a comprehensive overview of SocialBook's features and functionality. If you have any questions or need further clarification, please don't hesitate to ask!
-```

@@ -185,16 +185,9 @@ Contributions are welcome! To contribute:
 
   - **Create a Pull Request on GitHub**.
 
+Thank you for checking out SocialBook! Enjoy exploring the website and feel free to share your feedback or suggestions.
+
 
 ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+- I hope this README file provides a comprehensive overview of SocialBook's features and functionality. If you have any questions or need further clarification, please don't hesitate to ask!
 ```
-
-
-
-
-Thank you for checking out SocialBook! Enjoy exploring the website and feel free to share your feedback or suggestions.
